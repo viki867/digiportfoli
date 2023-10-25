@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta  charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" conntent="width=evice-width, initial-scale=1.0">
+        <title>Personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Vignesh</span></h1>
+                <p>web developer</p>
+            </div>
+        </div>
+    </div>
+<!---------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="images/sm.jfif">
+        </div>
+        <div class="about-col-2">
+            <h1 class="subtitle"> About Me</h1>
+
+            <p>I am a flexible and experienced with excellent time management skills.
+             I am a good communicator with proven inter personal skills and am used to working in a 
+                 team whilst also being capable of using own initiative. 
+                 I am skilled In dealing with problems in a resourceful manner and negotiating 
+                 to achieve beneficial agreement.
+                 I am always enthusiastic to learn and undertake new challenges.</p>
+
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Editing</span><br>Edit a Excellent Videos</li>
+                        <li><span>MS-Office</span><br>Well versed a MS-Office</li>
+                   </ul>                
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>SSLC</span><br>Year of Passing-2019<br>Percentage-80%</li>
+                        <li><span>HSC</span><br>Year of Passing-2021<br>Percentage-88%</li>
+                        <li><span>BHARATHIDASAN UNIVERSITY</span><br>B.Sc.Information Technology<br>Studying</li>
+                   </ul>                
+                </div>
+                <div class="tab-contents" id="Projects">
+                    <ul>
+                        <li><span>Project-1</span><br>e-commerce website built using HTML,CSS</li>
+                        <li><span>Project-2</span><br>Thunder effect Edit using Capcut</li>
+                   </ul>                
+                </div>
+          </div>
+     </div>
+   </div>
+</div>
+
+<!------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+           <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="https://icons8.com/icon/qcJIks9mhL4R/link"></i>svvignesh867@gmail.com</p>
+              <p><i class="https://icons8.com/icon/I24lanX6Nq71/phone"></i>7358978226</p>
+              <div class="social-icons">
+              <a href=" "><i class="fa-brands fa-facebook"></i></a>
+              <a href=" "><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=" "><i class="fa-brands fa-whatsapp"></i></a>
+           </div>
+           <a href="images/MY CV.pdf" download class="btn btn2">Download CV</a>
+           </div>
+           <div class="contact-right">
+            <form>
+                <input type="text " name="Name" placeholder="Youur Name" required>
+                <input type="email " name="email" placeholder="Youur Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+           </div>
+        </div>
+    </div>y
+ <div class="copyright">
+    <p>copyright@vignesh.Made by sv_official</p>
+ </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    </body>
+</html>
